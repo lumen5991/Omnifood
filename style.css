@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@font-face {
+    font-family: "Rubik-Bold";
+    src: url(./static/Rubik-Bold.ttf);
+}
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(./static/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: Rubik-Light;
+    src: url(./static/Rubik-Light.ttf);
+}
+@font-face {
+    font-family: Rubik-Black;
+    src: url(./static/Rubik-Black.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 2px solid black;*/
+    padding: 25px 50px 25px 50px;
+    position: fixed;
+    width: 100%;
+    background-color: #fdf2e9;
+    margin-top: -3.8%;
+}
+header .logo a{
+   /* border: 2px solid black;*/
+    padding: 15px 10px 5px 10px;
+}
+header .logo a:focus{
+    border: 10px solid  #e67e22;
+}
+header .nav a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bolder;
+    margin-left: 40px;
+    font-size: 17px;
+    /*border: 2px solid black;*/
+    padding: 5px 10px 5px 10px;
+}
+header .nav a:hover{
+    color:#F27B2A ;
+}
+header .nav a:focus, header .nav a:visited{ 
+    border: 10px solid  #e67e22;
+}
+#try{
+    border-radius: 10px;
+    color: white;
+    padding: 11px 21px;
+    background-color: #cf711f;
+}
+main{
+    background-color: #FCFCFC;
+    margin-top: 50px;
+    color: #888888;
+}
+.healthy{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdf2e9;
+}
+.healthy .box_one{
+    margin-right: 60px;
+}
+.healthy .box_one h1{
+    margin-top: 30px;
+    font-family: 'Rubik-Bold';
+    font-size: 55px;
+    text-align: justify;
+    color: #333333;
+    font-weight: bolder;
+    line-height: 1;
+}
+.healthy .box_one p{
+    color: #555555;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.button_first{
+    margin-top: 50px;
+}
+.button_first a{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px 25px 15px 25px;
+    font-size: 18px;
+    margin-right: 30px;
+}
+/*button Start eating well*/
+#start{
+    font-weight: bolder;
+    background-color: #e67e22;
+    color: #ffffff;
+}
+/*button learn more*/
+#learn{
+    background-color: #ffffff;
+    color: #555555;
+    font-weight: bolder;
+}
+.customers{
+    margin-top: 70px;
+    display: flex;
+}
+.customers img{
+    border-radius: 50%;
+    border: 2px solid #fdf2e9;
+    height: 50px;
+    width: 50px;
+    margin: -10px;
+}
+.customers p{
+    margin-left: 30px;
+    color: #555555;
+    font-weight: bolder;
+    font-size: 12px;
+}
+/*250,000*/
+#plus{
+    color: #cf711f;
+}
+.content_one{
+    padding: 50px 0 0 0;
+    text-align: center;
+    font-family: Rubik-Light;
+    font-size: 16px;
+    color: #A7A7A7;
+}
+.content_one .partener img{
+    filter: invert(50%);
+    margin: 30px;
+    text-align: center;
+}
+.content_two{
+    margin-top: 60px;
+    padding-left: 150px;
+    line-height: 2;
+}
+.content_two p, #test{
+    color: #DA6E26;
+    font-weight:lighter;
+    font-size: 18px;
+    font-family: Rubik-Medium;
+}
+.content_two h2{
+    color: #333333;
+    font-size: 42px;
+    font-family: Rubik-Bold;
+}
+.content_tree{
+    display: flex;
+    padding-left: 150px;
+    padding-top: 80px;
+}
+.content_tree .number{
+    font-size: 77px;
+    color: #DDDDDD;
+    font-family: Rubik-Bold;
+}
+.content_tree h2{
+    font-size: 28px;
+    color: #333333;
+    font-weight: bolder;
+}
+.content_tree p{
+    font-size: 18px;
+    color: #555555;
+    line-height: 2;
+}
+.content_tree .box_tree{
+    margin-right: 200px;
+}
+.content_tree .box_four{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #EAD4C4;
+    margin-top: 70px;
+    /*padding: 30px;*/
+    outline: 35px solid #FEF2E9;
+    position: relative;
+}
+.content_tree .box_four img{
+    margin-top:-60px;
+    padding-left: 30px;
+    position: absolute;
+}
+.content_four{
+    display: flex;
+    padding-left: 250px;
+    padding-top: 80px;
+    margin: 80px 0 80px 0;
+}
+.content_four .box_five{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #EAD4C4;
+    margin-top: 70px;
+    /*padding: 30px;*/
+    outline: 35px solid #FEF2E9;
+    position: relative;
+    margin-right: 200px;
+}
+.content_four .box_five img{
+    margin-top:-60px;
+    padding-left: 30px;
+    position: absolute;
+}
+.content_four .box_fours .number2{
+    font-size: 77px;
+    color: #DDDDDD;
+    font-family: Rubik-Bold;
+}
+.content_four .box_fours h2{
+    font-size: 28px;
+    color: #333333;
+    font-weight: bolder;
+}
+.content_four .box_fours p{
+    font-size: 18px;
+    color: #555555;
+    line-height: 2;
+}
+.meals_text{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+    color: #333333;
+    line-height: 1.5;
+    font-family: Rubik-Bold;
+}
+.one{
+    margin-top: 150px;
+}
+#meals{
+    color:#cf711f;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: Rubik-Medium;
+}
+.meals{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin-right: 200px;
+    padding-left: 150px;
+    transition: all 0.4s;
+    margin-right: 15px;
+    font-size: 18px;
+}
+.meals_one, .meals_two{
+    margin-right: 60px;
+    color: #333;
+    border-radius: 15px;
+    /*box-shadow: 20px 20px 20px 20px red;*/
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
+    height: 100px;
+    width: 320px;
+    transition: all 0.4s;  
+}
+.meals_one:hover, .meals_two:hover{
+    transform: translateY(-1rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.meals_one img, .meals_two img{
+    border-radius: 15px 15px 0 0;
+}
+.meals_one .meals_list1, .meals_two .meals_list2{
+    padding: 28px 43px 50px 43px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    border-radius: 0 0 15px 15px;
+}
+.meals_one p span, .meals_two p span, .meals_tree p span{
+    color: #F27B2A;
+    margin-right: 15px;
+}
+
+.meals .icons{
+    filter:saturate();
+    margin-right: 20px;
+}
+#vegetarian{
+    background-color: #00DA72;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.meals_list1 h4, .meals_list2 h4{
+    margin-top: 6px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#vegan, #paleo{ 
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+#vegan{
+    background-color:#73E34C;
+}
+#paleo{
+    background-color:#FFDA50;
+}
+
+.meals_tree{
+    color: #333333;
+    font-size: 16px;
+}
+.meals_tree h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.meals_tree p{
+    line-height: 1.42;
+    color: #555555;
+    font-size: 18px;
+}
+.see{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+}
+.see p a{
+    color: #F27B2A;
+    font-size: 18px;
+}
+.testi{
+    display: flex;
+    background-color: #FEF2E9;
+    padding: 150px 0 50px 150px;
+    justify-content: space-between;
+    
+   
+}
+.testi_box_one_text h2{
+    margin-top: 20px;
+    font-family: 'Rubik-Bold';
+    font-size: 40px;
+    color: #333333;
+    font-weight: bolder;
+    line-height: 1.3;
+    margin-bottom: 100px;
+}
+.testi_box_one{
+    display: block;
+    
+}
+.testi_box_one .custos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: lighter;
+    color: #555555;
+}
+.testi_box_one .custos div{
+    margin-bottom: 60px;
+    margin-right: 60px;
+    margin-top: -20px;
+    padding-top: 10px;
+}
+.testi_box_one .custos div span{
+    color: #888888;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 50px;
+    
+}
+
+.testi_box_one .custos img{
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.testi .testi_box_two{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    padding-top:30px;
+    padding-bottom: 75px;
+}
+.testi .testi_box_two img{
+    width: 180px;
+    margin: 0 20px 10px 0;
+    transition: all(0.4s);
+    margin-bottom: -150px;
+}
+.testi .testi_box_two img:hover{
+    transform: scale(1.1);
+}
+.tree{
+    margin-top: 80px;
+    padding-left: 150px;
+    font-family: 'Rubik-Bold';
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+.pricing p{
+    color: #DA6E26;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: Rubik-Medium;
+}
+.pricing h2{
+    font-size: 42px;
+    font-weight: bolder;
+    color: #333333;
+    font-family: Rubik-Bold;
+    margin-top: 10px;
+}
+.tree .box{
+    display: flex;
+    margin-top: 30px;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+.tree .box1, .tree .box2{
+    width: 400px;
+    border: 1px solid #FDF1E8;
+    margin: auto;
+    margin-left: -60px;
+    padding: 30px;
+    border-radius: 15px;
+}
+.tree .box .titre{
+    color: #cf711f;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: Rubik-Bold;
+}
+
+.tree .box1{
+    margin-right: 100px;
+    margin-left: -50px;
+}
+.tree .box2{
+    background-color: #F9EDE4;
+    margin-right: 0;
+
+}
+.tree .box .a{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.tree .box1 a, .tree .box2 a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    background-color: #DA6E26;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+/* .tree .box .best{
+    background-color: orange;
+    color: black;
+    margin-left: -30px;
+    width: 50%;
+    text-align: center;
+    rotate: 45deg;
+} */
+.tree .prix{
+    font-size:65px;
+    text-align:center;
+    color: #333;
+    font-family: Rubik-Bold;
+    font-weight: bolder;
+}
+.tree .prix_mois{
+    text-align: center;
+    color:#888888;    
+}
+.tree .prix span{
+    font-size:25px;
+    margin-right: 8px;
+}
+.tree .listing{
+    margin-top: 30px;
+    padding-left: 25px;
+    font-size: 18px;
+    line-height: 0.75;
+}
+.tree .listing span{
+   color:#e67e22;
+   margin-right: 15px;
+   margin-top: -20px;
+}
+.tree .list_text{
+    text-align: center;
+    margin: 40px;
+    margin-left: -30px;
+}
+.tree .pricing_footer{
+    display: flex;
+}
+.tree .pricing_footer .footer_icones{
+    background-color: #FEF2E9;
+    font-size: 30px;
+    border-radius: 50%;
+    color:#DA6E26;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin:30px 0 20px 0;
+    padding: 10px;
+    align-items: center;
+}
+.tree .pricing_footer div{
+    margin-right: 60px;
+    font-size: 16px;
+    line-height: 2;
+    padding: 0;
+}
+.tree .pricing_footer .pricing_titre{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #333;
+    font-family: Rubik-Bold;
+}
+.tree .pricing_footer .pricing_text{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.four{
+    padding: 150px;
+
+}
+.four .formulaire{
+    display: flex;
+    background-color: #F4924B;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.formulaire .form_titre{
+    padding: 50px;
+    
+}
+.formulaire .form_titre h2{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #333333;
+    margin-top: 10px;
+    font-family:Rubik-Medium;
+}
+.formulaire .form_titre p{
+    font-size: 18px;
+    color: #333333;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.formulaire .form form{
+    font-size: 16px;
+    color: #333333;
+    margin-top: 20px;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+}
+.form form input, .form form select, .form form button{
+    width: 275px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+.form form select option{
+    font-size: 18px;
+    outline: 30px solid #FEF2E9;
+    border: none;
+}
+.form form select option:focus{
+    font-size: 18px;
+    outline: 30px solid #FEF2E9;
+    border: none;
+}
+.form form button{
+    margin-top: 28px;
+    background-color: #48250C;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.formulaire .picture img{
+    width:325px;
+    height:100% ;
+    border-radius: 0 20px 20px 0;
+    filter: invert(25%)
+}
+footer{
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    line-height: 2.5;
+}
+footer .footer-heading{
+    font-size: 16px;
+    font-weight: bolder;
+}
+footer div span{
+    font-size: 20px;
+    margin-right: 10px;
+}
+footer .copyright{
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 18px;
+}
+footer .footer-link{
+    text-decoration: none;
+    color: #555555;
+}
